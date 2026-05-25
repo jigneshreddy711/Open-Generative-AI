@@ -2445,7 +2445,7 @@ export const t2vModels = [
     "name": "Hunyuan",
     "inputs": {
       "prompt": { "type": "string", "title": "Prompt", "name": "prompt", "description": "Text prompt describing the video." },
-      "aspect_ratio": { "enum": ["16:9", "9:16"], "title": "Aspect Ratio", "name": "aspect_ratio", "type": "string", "description": "Aspect ratio of the output video.", "default": "16:9" }
+      "aspect_ratio": { "enum": ["16:9", "9:16", "1:1"], "title": "Aspect Ratio", "name": "aspect_ratio", "type": "string", "description": "Aspect ratio of the output video.", "default": "16:9" }
     }
   },
   {
@@ -2453,7 +2453,7 @@ export const t2vModels = [
     "name": "Hunyuan Fast",
     "inputs": {
       "prompt": { "type": "string", "title": "Prompt", "name": "prompt", "description": "Text prompt describing the video." },
-      "aspect_ratio": { "enum": ["16:9", "9:16"], "title": "Aspect Ratio", "name": "aspect_ratio", "type": "string", "description": "Aspect ratio of the output video.", "default": "16:9" }
+      "aspect_ratio": { "enum": ["16:9", "9:16", "1:1"], "title": "Aspect Ratio", "name": "aspect_ratio", "type": "string", "description": "Aspect ratio of the output video.", "default": "16:9" }
     }
   },
   {
@@ -5394,7 +5394,8 @@ export const i2vModels = [
         "description": "Aspect ratio of the output video.",
         "enum": [
           "16:9",
-          "9:16"
+          "9:16",
+          "1:1"
         ],
         "default": "16:9"
       }
